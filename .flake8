@@ -1,0 +1,19 @@
+[flake8]
+max-line-length = 135
+exclude = .git,__pycache__,__init__.py,.mypy_cache,.pytest_cache,venv,alembic,probe_ldap3.py,probe_gssapi.py,hello.py
+
+ignore =
+    # F541 f-string is missing placeholders
+    F541,
+    # F401 ... imported but unused
+    F401,
+    # W503 line break before binary operator
+    W503,
+    #  W504 line break after binary operator
+    W504,
+    # A002 argument "id" is shadowing a python builtin
+    A002,
+    # A003 class attribute "id" is shadowing a python builtin
+    A003,
+    # module level import not at top of file
+    E402,

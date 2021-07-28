@@ -1,0 +1,9 @@
+loguru
+pathlib
+python-dotenv
+fastapi
+uvicorn
+emails
+pydantic[email]
+pymongo
+dnspython

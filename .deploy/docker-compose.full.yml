@@ -1,0 +1,13 @@
+version: '3'
+services:
+    mongo:
+      image: "mongo:4.0.2"
+      network_mode: host
+    leadhit:
+      env_file:
+        - ../.deploy/.envs/${APP_ENV}
+      build:
+        context: ..
+        dockerfile: .deploy/Dockerfile
+      depends_on: []
+      network_mode: host

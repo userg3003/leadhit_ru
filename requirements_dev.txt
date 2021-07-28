@@ -1,0 +1,11 @@
+flake8
+flake8-builtins
+mypy
+black
+isort
+pylint
+pytest
+pytest-asyncio
+pytest-cov
+Faker
+
